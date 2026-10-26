@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "1.0.0",
+  "appVersion": "0.1.0",
+  "metadata": {
+    "id": "cf8b9ee0-e6a7-404d-bcaf-4a135a5ce6a8",
+    "title": "РГР — схема 19, вариант 4",
+    "description": "По фотографии: F1,F2 влево; F3,F4 вправо. Материал и E не указаны; E=80 ГПа временно принят для численного решения, перемещения условные. [u] не задано. Подбор площадей по прочности: A1,min=611.111111 мм², принято A1=620 мм²; отношения 1:1.5:2:2.4. Квадратные сечения приняты для визуализации, форма не задана в условии.",
+    "createdAt": "2026-10-08T06:48:02.877Z",
+    "updatedAt": "2026-10-08T06:48:02.877Z"
+  },
+  "displayUnits": {
+    "length": "m",
+    "force": "kN",
+    "stress": "MPa",
+    "angle": "rad"
+  },
+  "model": {
+    "nodes": [
+      {
+        "id": "legacy-node-1",
+        "number": 1,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "id": "legacy-node-2",
+        "number": 2,
+        "x": 0.75,
+        "y": 0
+      },
+      {
+        "id": "legacy-node-3",
+        "number": 3,
+        "x": 1.4,
+        "y": 0
+      },
+      {
+        "id": "legacy-node-4",
+        "number": 4,
+        "x": 1.9,
+        "y": 0
+      },
+      {
+        "id": "legacy-node-5",
+        "number": 5,
+        "x": 2.25,
+        "y": 0
+      }
+    ],
+    "materials": [
+      {
+        "id": "legacy-material-1",
+        "name": "Материал не задан; E=80 ГПа временно",
+        "elasticModulus": 80000000000
+      },
+      {
+        "id": "legacy-material-2",
+        "name": "Материал не задан; E=80 ГПа временно",
+        "elasticModulus": 80000000000
+      },
+      {
+        "id": "legacy-material-3",
+        "name": "Материал не задан; E=80 ГПа временно",
+        "elasticModulus": 80000000000
+      },
+      {
+        "id": "legacy-material-4",
+        "name": "Материал не задан; E=80 ГПа временно",
+        "elasticModulus": 80000000000
+      }
+    ],
+    "sections": [
+      {
+        "id": "legacy-section-15",
+        "name": "A1 = 620 мм²",
+        "area": 0.00062,
+        "inertiaZ": 3.203333333333333e-8,
+        "yMinus": 0.012449899597988732,
+        "yPlus": 0.012449899597988732,
+        "source": {
+          "kind": "general"
+        }
+      },
+      {
+        "id": "legacy-section-16",
+        "name": "A2 = 930 мм²",
+        "area": 0.00093,
+        "inertiaZ": 7.207500000000002e-8,
+        "yMinus": 0.015247950681976907,
+        "yPlus": 0.015247950681976907,
+        "source": {
+          "kind": "general"
+        }
+      },
+      {
+        "id": "legacy-section-17",
+        "name": "A3 = 1240 мм²",
+        "area": 0.00124,
+        "inertiaZ": 1.2813333333333332e-7,
+        "yMinus": 0.01760681686165901,
+        "yPlus": 0.01760681686165901,
+        "source": {
+          "kind": "general"
+        }
+      },
+      {
+        "id": "legacy-section-18",
+        "name": "A4 = 1488 мм²",
+        "area": 0.001488,
+        "inertiaZ": 1.8451199999999998e-7,
+        "yMinus": 0.01928730152198591,
+        "yPlus": 0.01928730152198591,
+        "source": {
+          "kind": "general"
+        }
+      }
+    ],
+    "elements": [
+      {
+        "id": "legacy-element-1",
+        "number": 4,
+        "nodeI": "legacy-node-1",
+        "nodeJ": "legacy-node-2",
+        "materialId": "legacy-material-4",
+        "sectionId": "legacy-section-18",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      },
+      {
+        "id": "legacy-element-2",
+        "number": 3,
+        "nodeI": "legacy-node-2",
+        "nodeJ": "legacy-node-3",
+        "materialId": "legacy-material-3",
+        "sectionId": "legacy-section-17",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      },
+      {
+        "id": "legacy-element-3",
+        "number": 2,
+        "nodeI": "legacy-node-3",
+        "nodeJ": "legacy-node-4",
+        "materialId": "legacy-material-2",
+        "sectionId": "legacy-section-16",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      },
+      {
+        "id": "legacy-element-4",
+        "number": 1,
+        "nodeI": "legacy-node-4",
+        "nodeJ": "legacy-node-5",
+        "materialId": "legacy-material-1",
+        "sectionId": "legacy-section-15",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      }
+    ],
+    "supports": [
+      {
+        "nodeId": "legacy-node-1",
+        "ux": true,
+        "uy": true,
+        "rz": true
+      }
+    ]
+  },
+  "loadCases": [
+    {
+      "id": "legacy-load-case-1",
+      "name": "Импортированное загружение",
+      "type": "linear-static",
+      "nodalLoads": [
+        {
+          "id": "legacy-nodal-1",
+          "nodeId": "legacy-node-2",
+          "fx": 90000,
+          "fy": 0,
+          "mz": 0
+        },
+        {
+          "id": "legacy-nodal-2",
+          "nodeId": "legacy-node-3",
+          "fx": 80000,
+          "fy": 0,
+          "mz": 0
+        },
+        {
+          "id": "legacy-nodal-3",
+          "nodeId": "legacy-node-4",
+          "fx": -50000,
+          "fy": 0,
+          "mz": 0
+        },
+        {
+          "id": "legacy-nodal-4",
+          "nodeId": "legacy-node-5",
+          "fx": -60000,
+          "fy": 0,
+          "mz": 0
+        }
+      ],
+      "elementLoads": []
+    }
+  ],
+  "analysisSettings": {
+    "analysisType": "linear-static",
+    "activeLoadCaseId": "legacy-load-case-1",
+    "solverVersion": null,
+    "singularityTolerance": 1e-12
+  },
+  "legacyImport": {
+    "source": "SAPR-BAR-documented-structure",
+    "parserVersion": "1.0.0",
+    "cnFile": "VARIANT4.CN",
+    "ldFile": "VARIANT4.LD",
+    "mdFile": "VARIANT4.MD",
+    "variant": "B",
+    "unitSystem": "SI",
+    "importedAt": "2026-10-08T06:48:02.877Z",
+    "warnings": [
+      "CN:15 XC.Sp/Sc: Допускаемые напряжения сохранены только в отчёте.",
+      "CN:16 XC.Sp/Sc: Допускаемые напряжения сохранены только в отчёте.",
+      "CN:17 XC.Sp/Sc: Допускаемые напряжения сохранены только в отчёте.",
+      "CN:18 XC.Sp/Sc: Допускаемые напряжения сохранены только в отчёте."
+    ],
+    "calculationBlockedReasons": [],
+    "compatibility": "parser-validated-not-original-verified",
+    "originalFiles": {
+      "cn": "* Scheme 19, variant 4. Profile B, SI: m N Pa.\n* E=80 GPa is a provisional parameter, not supplied by the photographed task.\n* Square sections are adopted for visualization; their areas are sized by strength.\n* Nodes from the LEFT fixed end. Elements numbered 4,3,2,1 in JSON.\n5 4 4 0 0\n0 0\n0.75 0\n1.4 0\n1.9 0\n2.25 0\n1 2 4\n2 3 3\n3 4 2\n4 5 1\n3 8e10 0 0 0.024899799195977464 0.024899799195977464 0 0 70e6 120e6\n3 8e10 0 0 0.030495901363953814 0.030495901363953814 0 0 70e6 120e6\n3 8e10 0 0 0.035213633723318018 0.035213633723318018 0 0 70e6 120e6\n3 8e10 0 0 0.038574603043971818 0.038574603043971818 0 0 70e6 120e6\n",
+      "ld": "* Left fixed end. F4=+90, F3=+80, F2=-50, F1=-60 kN.\n1 4 0 0\n1 1 1 1 0 0 0\n2 90000 0 0\n3 80000 0 0\n4 -50000 0 0\n5 -60000 0 0\n",
+      "md": "* Linear static, one load state, no self weight or shear deformation.\n1e-8 1 1 1 0 0 0 0 9.81 0\n1 0 0 0 0 0 0 0 0 1\n"
+    }
+  }
+}

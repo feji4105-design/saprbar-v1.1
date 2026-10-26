@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "1.0.0",
+  "appVersion": "0.1.0",
+  "metadata": {
+    "id": "cf8b9ee0-e6a7-404d-bcaf-4a135a5ce6a8",
+    "title": "РГР 1 схема 19 вариант 4 по присланной фотографии",
+    "description": "F4=+90, F3=+80, F2=+50, F1=-60 кН. A0=1000 мм². E=80 ГПа принят как в РГР1, в таблице не задан. Квадратные сечения условные; задача осевая. [σ]р=70 МПа; [σ]сж=120 МПа.",
+    "createdAt": "2026-10-08T06:48:02.877Z",
+    "updatedAt": "2026-10-08T06:48:02.877Z"
+  },
+  "displayUnits": {
+    "length": "m",
+    "force": "kN",
+    "stress": "MPa",
+    "angle": "rad"
+  },
+  "model": {
+    "nodes": [
+      {
+        "id": "legacy-node-1",
+        "number": 1,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "id": "legacy-node-2",
+        "number": 2,
+        "x": 0.75,
+        "y": 0
+      },
+      {
+        "id": "legacy-node-3",
+        "number": 3,
+        "x": 1.4,
+        "y": 0
+      },
+      {
+        "id": "legacy-node-4",
+        "number": 4,
+        "x": 1.9,
+        "y": 0
+      },
+      {
+        "id": "legacy-node-5",
+        "number": 5,
+        "x": 2.25,
+        "y": 0
+      }
+    ],
+    "materials": [
+      {
+        "id": "legacy-material-1",
+        "name": "Материал не задан; E=80 ГПа временно",
+        "elasticModulus": 80000000000
+      },
+      {
+        "id": "legacy-material-2",
+        "name": "Материал не задан; E=80 ГПа временно",
+        "elasticModulus": 80000000000
+      },
+      {
+        "id": "legacy-material-3",
+        "name": "Материал не задан; E=80 ГПа временно",
+        "elasticModulus": 80000000000
+      },
+      {
+        "id": "legacy-material-4",
+        "name": "Материал не задан; E=80 ГПа временно",
+        "elasticModulus": 80000000000
+      }
+    ],
+    "sections": [
+      {
+        "id": "legacy-section-15",
+        "name": "A1",
+        "area": 0.001,
+        "inertiaZ": 8.333333333333333e-8,
+        "yMinus": 0.015811388300841896,
+        "yPlus": 0.015811388300841896,
+        "source": {
+          "kind": "general"
+        }
+      },
+      {
+        "id": "legacy-section-16",
+        "name": "A2",
+        "area": 0.0015,
+        "inertiaZ": 1.875e-7,
+        "yMinus": 0.019364916731037084,
+        "yPlus": 0.019364916731037084,
+        "source": {
+          "kind": "general"
+        }
+      },
+      {
+        "id": "legacy-section-17",
+        "name": "A3",
+        "area": 0.002,
+        "inertiaZ": 3.333333333333333e-7,
+        "yMinus": 0.022360679774997897,
+        "yPlus": 0.022360679774997897,
+        "source": {
+          "kind": "general"
+        }
+      },
+      {
+        "id": "legacy-section-18",
+        "name": "A4",
+        "area": 0.0024,
+        "inertiaZ": 4.8e-7,
+        "yMinus": 0.02449489742783178,
+        "yPlus": 0.02449489742783178,
+        "source": {
+          "kind": "general"
+        }
+      }
+    ],
+    "elements": [
+      {
+        "id": "legacy-element-1",
+        "number": 4,
+        "nodeI": "legacy-node-1",
+        "nodeJ": "legacy-node-2",
+        "materialId": "legacy-material-4",
+        "sectionId": "legacy-section-18",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      },
+      {
+        "id": "legacy-element-2",
+        "number": 3,
+        "nodeI": "legacy-node-2",
+        "nodeJ": "legacy-node-3",
+        "materialId": "legacy-material-3",
+        "sectionId": "legacy-section-15",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      },
+      {
+        "id": "legacy-element-3",
+        "number": 2,
+        "nodeI": "legacy-node-3",
+        "nodeJ": "legacy-node-4",
+        "materialId": "legacy-material-2",
+        "sectionId": "legacy-section-17",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      },
+      {
+        "id": "legacy-element-4",
+        "number": 1,
+        "nodeI": "legacy-node-4",
+        "nodeJ": "legacy-node-5",
+        "materialId": "legacy-material-1",
+        "sectionId": "legacy-section-16",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      }
+    ],
+    "supports": [
+      {
+        "nodeId": "legacy-node-1",
+        "ux": true,
+        "uy": true,
+        "rz": true
+      }
+    ]
+  },
+  "loadCases": [
+    {
+      "id": "legacy-load-case-1",
+      "name": "Импортированное загружение",
+      "type": "linear-static",
+      "nodalLoads": [
+        {
+          "id": "legacy-nodal-1",
+          "nodeId": "legacy-node-2",
+          "fx": 90000,
+          "fy": 0,
+          "mz": 0
+        },
+        {
+          "id": "legacy-nodal-2",
+          "nodeId": "legacy-node-3",
+          "fx": 80000,
+          "fy": 0,
+          "mz": 0
+        },
+        {
+          "id": "legacy-nodal-3",
+          "nodeId": "legacy-node-4",
+          "fx": 50000,
+          "fy": 0,
+          "mz": 0
+        },
+        {
+          "id": "legacy-nodal-4",
+          "nodeId": "legacy-node-5",
+          "fx": -60000,
+          "fy": 0,
+          "mz": 0
+        }
+      ],
+      "elementLoads": []
+    }
+  ],
+  "analysisSettings": {
+    "analysisType": "linear-static",
+    "activeLoadCaseId": "legacy-load-case-1",
+    "solverVersion": null,
+    "singularityTolerance": 1e-12
+  }
+}

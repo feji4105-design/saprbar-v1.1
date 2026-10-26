@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0.0",
+  "appVersion": "0.1.0",
+  "metadata": {
+    "id": "project-portal-frame",
+    "title": "Портальная рама",
+    "description": "Небольшой пример модели. Расчётное ядро ещё не подключено.",
+    "createdAt": "2026-10-01T12:00:00.000Z",
+    "updatedAt": "2026-10-01T12:00:00.000Z"
+  },
+  "displayUnits": { "length": "m", "force": "kN", "stress": "MPa", "angle": "deg" },
+  "model": {
+    "nodes": [
+      { "id": "n1", "number": 1, "x": 0, "y": 0 },
+      { "id": "n2", "number": 2, "x": 0, "y": 3 },
+      { "id": "n3", "number": 3, "x": 4, "y": 3 },
+      { "id": "n4", "number": 4, "x": 4, "y": 0 }
+    ],
+    "materials": [{ "id": "steel", "name": "Сталь, пример", "elasticModulus": 210000000000 }],
+    "sections": [{
+      "id": "section-rect", "name": "Прямоугольник 200×300 мм", "area": 0.06,
+      "inertiaZ": 0.00045, "yMinus": 0.15, "yPlus": 0.15,
+      "source": { "kind": "rectangle", "width": 0.2, "height": 0.3 }
+    }],
+    "elements": [
+      { "id": "e1", "number": 1, "nodeI": "n1", "nodeJ": "n2", "materialId": "steel", "sectionId": "section-rect", "releases": { "rotationI": false, "rotationJ": false } },
+      { "id": "e2", "number": 2, "nodeI": "n2", "nodeJ": "n3", "materialId": "steel", "sectionId": "section-rect", "releases": { "rotationI": false, "rotationJ": false } },
+      { "id": "e3", "number": 3, "nodeI": "n3", "nodeJ": "n4", "materialId": "steel", "sectionId": "section-rect", "releases": { "rotationI": false, "rotationJ": false } }
+    ],
+    "supports": [
+      { "nodeId": "n1", "ux": true, "uy": true, "rz": true },
+      { "nodeId": "n4", "ux": true, "uy": true, "rz": true }
+    ]
+  },
+  "loadCases": [{
+    "id": "lc1", "name": "Основное", "type": "linear-static",
+    "nodalLoads": [{ "id": "nl1", "nodeId": "n2", "fx": 10000, "fy": 0, "mz": 0 }],
+    "elementLoads": [{ "id": "el1", "elementId": "e2", "type": "uniform-local", "qx": 0, "qy": -5000 }]
+  }],
+  "analysisSettings": {
+    "analysisType": "linear-static",
+    "activeLoadCaseId": "lc1",
+    "solverVersion": null,
+    "singularityTolerance": 1e-12
+  }
+}

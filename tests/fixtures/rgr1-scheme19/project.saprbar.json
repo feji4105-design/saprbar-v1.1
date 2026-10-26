@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "1.0.0",
+  "appVersion": "0.1.0",
+  "metadata": {
+    "id": "d62c9f82-b6e8-4e9c-b15d-1f435c0a1121",
+    "title": "РГР 1 — схема 19, вариант 4",
+    "description": "Свободный ввод. Площади Aᵢ=kᵢA₀; A₀=1000 мм². Слева направо: A4 (k=2.4), A1 (k=1), A3 (k=2), A2 (k=1.5). Квадратные сечения приняты для изображения; исходная форма сечений не задана. Направления сил и заделки введены пользователем. Стороны заделок: 1=left;2=auto;3=auto;4=auto;5=auto.  [σ]р=70 МПа; [σ]сж=120 МПа. Источники: IMG_3315.jpg, таблица 1, вариант 4; IMG_3316.jpg, схема 19. E=80 ГПа взят из формул RGR1.docx, а не из таблицы. A₀,min=1000 мм² определено независимо методом сечений: max(60000/(1.5*120),10000/(2*120),70000/70,160000/(2.4*70)) мм². Квадратная форма — соглашение веб-модели; в осевом расчёте используется только EA. Плотность не задана.",
+    "createdAt": "2026-10-22T12:03:56.374Z",
+    "updatedAt": "2026-10-22T12:03:56.374Z",
+    "areaSizing": {
+      "modelSnapshot": "{\"model\":{\"nodes\":[{\"id\":\"f3f72926-580b-4905-9994-079bff2dda67\",\"number\":1,\"x\":0,\"y\":0},{\"id\":\"96046b7d-ed7b-4341-8683-1a98c106973c\",\"number\":2,\"x\":0.75,\"y\":0},{\"id\":\"1e6cf35e-47b4-46bb-a039-2de39874afcc\",\"number\":3,\"x\":1.4,\"y\":0},{\"id\":\"638131d8-0327-4e0f-9dee-b13a4e28246e\",\"number\":4,\"x\":1.9,\"y\":0},{\"id\":\"585ba937-2cec-4c89-b655-306d07d46cf2\",\"number\":5,\"x\":2.25,\"y\":0}],\"elements\":[{\"id\":\"f49ab580-d518-4cfd-aa12-23d7271678b5\",\"number\":4,\"nodeI\":\"f3f72926-580b-4905-9994-079bff2dda67\",\"nodeJ\":\"96046b7d-ed7b-4341-8683-1a98c106973c\",\"materialId\":\"59a4cac2-8881-400e-830b-857777e0dac5\",\"sectionId\":\"d8406d2a-40f7-4dd2-9935-2becade4eeb1\",\"releases\":{\"rotationI\":false,\"rotationJ\":false}},{\"id\":\"4f5233fd-242e-411f-be0a-dd0d7e83bc26\",\"number\":3,\"nodeI\":\"96046b7d-ed7b-4341-8683-1a98c106973c\",\"nodeJ\":\"1e6cf35e-47b4-46bb-a039-2de39874afcc\",\"materialId\":\"59a4cac2-8881-400e-830b-857777e0dac5\",\"sectionId\":\"da3f9261-74fe-4943-9696-f5b3cf14f082\",\"releases\":{\"rotationI\":false,\"rotationJ\":false}},{\"id\":\"704d89e4-e103-4382-a9ce-8b3ee53866f2\",\"number\":2,\"nodeI\":\"1e6cf35e-47b4-46bb-a039-2de39874afcc\",\"nodeJ\":\"638131d8-0327-4e0f-9dee-b13a4e28246e\",\"materialId\":\"59a4cac2-8881-400e-830b-857777e0dac5\",\"sectionId\":\"44a4b722-fe88-4aa6-a407-87bffdbcc0d5\",\"releases\":{\"rotationI\":false,\"rotationJ\":false}},{\"id\":\"e89775bb-915f-454b-9a7a-e5459e925203\",\"number\":1,\"nodeI\":\"638131d8-0327-4e0f-9dee-b13a4e28246e\",\"nodeJ\":\"585ba937-2cec-4c89-b655-306d07d46cf2\",\"materialId\":\"59a4cac2-8881-400e-830b-857777e0dac5\",\"sectionId\":\"052a84f2-2b7d-47d2-9b8f-f232ba2309a9\",\"releases\":{\"rotationI\":false,\"rotationJ\":false}}],\"materials\":[{\"id\":\"59a4cac2-8881-400e-830b-857777e0dac5\",\"name\":\"Чугун; E=80 ГПа по формулам RGR1.docx\",\"elasticModulus\":80000000000}],\"sections\":[{\"id\":\"d8406d2a-40f7-4dd2-9935-2becade4eeb1\",\"name\":\"A4\",\"area\":0.0024,\"inertiaZ\":4.8e-7,\"yMinus\":0.02449489742783178,\"yPlus\":0.02449489742783178,\"source\":{\"kind\":\"rectangle\",\"width\":0.04898979485566356,\"height\":0.04898979485566356}},{\"id\":\"da3f9261-74fe-4943-9696-f5b3cf14f082\",\"name\":\"A1\",\"area\":0.001,\"inertiaZ\":8.333333333333333e-8,\"yMinus\":0.015811388300841896,\"yPlus\":0.015811388300841896,\"source\":{\"kind\":\"rectangle\",\"width\":0.03162277660168379,\"height\":0.03162277660168379}},{\"id\":\"44a4b722-fe88-4aa6-a407-87bffdbcc0d5\",\"name\":\"A3\",\"area\":0.002,\"inertiaZ\":3.333333333333333e-7,\"yMinus\":0.022360679774997897,\"yPlus\":0.022360679774997897,\"source\":{\"kind\":\"rectangle\",\"width\":0.044721359549995794,\"height\":0.044721359549995794}},{\"id\":\"052a84f2-2b7d-47d2-9b8f-f232ba2309a9\",\"name\":\"A2\",\"area\":0.0015,\"inertiaZ\":1.875e-7,\"yMinus\":0.019364916731037084,\"yPlus\":0.019364916731037084,\"source\":{\"kind\":\"rectangle\",\"width\":0.03872983346207417,\"height\":0.03872983346207417}}],\"supports\":[{\"nodeId\":\"f3f72926-580b-4905-9994-079bff2dda67\",\"ux\":true,\"uy\":true,\"rz\":true}]},\"loadCases\":[{\"id\":\"084e698f-2c8a-43bb-8229-eff9760aaa78\",\"name\":\"Основное\",\"type\":\"linear-static\",\"nodalLoads\":[{\"id\":\"08a0377e-e621-460a-a069-dd951e4a1efc\",\"nodeId\":\"96046b7d-ed7b-4341-8683-1a98c106973c\",\"fx\":90000,\"fy\":0,\"mz\":0},{\"id\":\"1744c056-6851-4ea5-9a1b-6083462b893e\",\"nodeId\":\"1e6cf35e-47b4-46bb-a039-2de39874afcc\",\"fx\":80000,\"fy\":0,\"mz\":0},{\"id\":\"638ff1d7-b7ff-4993-9c8f-1c5542287749\",\"nodeId\":\"638131d8-0327-4e0f-9dee-b13a4e28246e\",\"fx\":50000,\"fy\":0,\"mz\":0},{\"id\":\"5e3e009e-5f7c-4435-a78f-9500fecd472f\",\"nodeId\":\"585ba937-2cec-4c89-b655-306d07d46cf2\",\"fx\":-60000,\"fy\":0,\"mz\":0}],\"elementLoads\":[]}],\"analysisSettings\":{\"analysisType\":\"linear-static\",\"activeLoadCaseId\":\"084e698f-2c8a-43bb-8229-eff9760aaa78\",\"solverVersion\":null,\"singularityTolerance\":1e-12}}",
+      "minimumBaseArea": 0.001,
+      "tensionMPa": 70,
+      "compressionMPa": 120
+    }
+  },
+  "displayUnits": {
+    "length": "m",
+    "force": "kN",
+    "stress": "MPa",
+    "angle": "deg"
+  },
+  "model": {
+    "nodes": [
+      {
+        "id": "f3f72926-580b-4905-9994-079bff2dda67",
+        "number": 1,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "id": "96046b7d-ed7b-4341-8683-1a98c106973c",
+        "number": 2,
+        "x": 0.75,
+        "y": 0
+      },
+      {
+        "id": "1e6cf35e-47b4-46bb-a039-2de39874afcc",
+        "number": 3,
+        "x": 1.4,
+        "y": 0
+      },
+      {
+        "id": "638131d8-0327-4e0f-9dee-b13a4e28246e",
+        "number": 4,
+        "x": 1.9,
+        "y": 0
+      },
+      {
+        "id": "585ba937-2cec-4c89-b655-306d07d46cf2",
+        "number": 5,
+        "x": 2.25,
+        "y": 0
+      }
+    ],
+    "elements": [
+      {
+        "id": "f49ab580-d518-4cfd-aa12-23d7271678b5",
+        "number": 4,
+        "nodeI": "f3f72926-580b-4905-9994-079bff2dda67",
+        "nodeJ": "96046b7d-ed7b-4341-8683-1a98c106973c",
+        "materialId": "59a4cac2-8881-400e-830b-857777e0dac5",
+        "sectionId": "d8406d2a-40f7-4dd2-9935-2becade4eeb1",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      },
+      {
+        "id": "4f5233fd-242e-411f-be0a-dd0d7e83bc26",
+        "number": 3,
+        "nodeI": "96046b7d-ed7b-4341-8683-1a98c106973c",
+        "nodeJ": "1e6cf35e-47b4-46bb-a039-2de39874afcc",
+        "materialId": "59a4cac2-8881-400e-830b-857777e0dac5",
+        "sectionId": "da3f9261-74fe-4943-9696-f5b3cf14f082",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      },
+      {
+        "id": "704d89e4-e103-4382-a9ce-8b3ee53866f2",
+        "number": 2,
+        "nodeI": "1e6cf35e-47b4-46bb-a039-2de39874afcc",
+        "nodeJ": "638131d8-0327-4e0f-9dee-b13a4e28246e",
+        "materialId": "59a4cac2-8881-400e-830b-857777e0dac5",
+        "sectionId": "44a4b722-fe88-4aa6-a407-87bffdbcc0d5",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      },
+      {
+        "id": "e89775bb-915f-454b-9a7a-e5459e925203",
+        "number": 1,
+        "nodeI": "638131d8-0327-4e0f-9dee-b13a4e28246e",
+        "nodeJ": "585ba937-2cec-4c89-b655-306d07d46cf2",
+        "materialId": "59a4cac2-8881-400e-830b-857777e0dac5",
+        "sectionId": "052a84f2-2b7d-47d2-9b8f-f232ba2309a9",
+        "releases": {
+          "rotationI": false,
+          "rotationJ": false
+        }
+      }
+    ],
+    "materials": [
+      {
+        "id": "59a4cac2-8881-400e-830b-857777e0dac5",
+        "name": "Чугун; E=80 ГПа по формулам RGR1.docx",
+        "elasticModulus": 80000000000
+      }
+    ],
+    "sections": [
+      {
+        "id": "d8406d2a-40f7-4dd2-9935-2becade4eeb1",
+        "name": "A4",
+        "area": 0.0024,
+        "inertiaZ": 4.8e-7,
+        "yMinus": 0.02449489742783178,
+        "yPlus": 0.02449489742783178,
+        "source": {
+          "kind": "rectangle",
+          "width": 0.04898979485566356,
+          "height": 0.04898979485566356
+        }
+      },
+      {
+        "id": "da3f9261-74fe-4943-9696-f5b3cf14f082",
+        "name": "A1",
+        "area": 0.001,
+        "inertiaZ": 8.333333333333333e-8,
+        "yMinus": 0.015811388300841896,
+        "yPlus": 0.015811388300841896,
+        "source": {
+          "kind": "rectangle",
+          "width": 0.03162277660168379,
+          "height": 0.03162277660168379
+        }
+      },
+      {
+        "id": "44a4b722-fe88-4aa6-a407-87bffdbcc0d5",
+        "name": "A3",
+        "area": 0.002,
+        "inertiaZ": 3.333333333333333e-7,
+        "yMinus": 0.022360679774997897,
+        "yPlus": 0.022360679774997897,
+        "source": {
+          "kind": "rectangle",
+          "width": 0.044721359549995794,
+          "height": 0.044721359549995794
+        }
+      },
+      {
+        "id": "052a84f2-2b7d-47d2-9b8f-f232ba2309a9",
+        "name": "A2",
+        "area": 0.0015,
+        "inertiaZ": 1.875e-7,
+        "yMinus": 0.019364916731037084,
+        "yPlus": 0.019364916731037084,
+        "source": {
+          "kind": "rectangle",
+          "width": 0.03872983346207417,
+          "height": 0.03872983346207417
+        }
+      }
+    ],
+    "supports": [
+      {
+        "nodeId": "f3f72926-580b-4905-9994-079bff2dda67",
+        "ux": true,
+        "uy": true,
+        "rz": true
+      }
+    ]
+  },
+  "loadCases": [
+    {
+      "id": "084e698f-2c8a-43bb-8229-eff9760aaa78",
+      "name": "Основное",
+      "type": "linear-static",
+      "nodalLoads": [
+        {
+          "id": "08a0377e-e621-460a-a069-dd951e4a1efc",
+          "nodeId": "96046b7d-ed7b-4341-8683-1a98c106973c",
+          "fx": 90000,
+          "fy": 0,
+          "mz": 0
+        },
+        {
+          "id": "1744c056-6851-4ea5-9a1b-6083462b893e",
+          "nodeId": "1e6cf35e-47b4-46bb-a039-2de39874afcc",
+          "fx": 80000,
+          "fy": 0,
+          "mz": 0
+        },
+        {
+          "id": "638ff1d7-b7ff-4993-9c8f-1c5542287749",
+          "nodeId": "638131d8-0327-4e0f-9dee-b13a4e28246e",
+          "fx": 50000,
+          "fy": 0,
+          "mz": 0
+        },
+        {
+          "id": "5e3e009e-5f7c-4435-a78f-9500fecd472f",
+          "nodeId": "585ba937-2cec-4c89-b655-306d07d46cf2",
+          "fx": -60000,
+          "fy": 0,
+          "mz": 0
+        }
+      ],
+      "elementLoads": []
+    }
+  ],
+  "analysisSettings": {
+    "analysisType": "linear-static",
+    "activeLoadCaseId": "084e698f-2c8a-43bb-8229-eff9760aaa78",
+    "solverVersion": null,
+    "singularityTolerance": 1e-12
+  }
+}
