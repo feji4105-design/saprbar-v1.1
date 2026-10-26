@@ -16,6 +16,22 @@
 - npm 10 или новее;
 - современный браузер.
 
+## Необязательный запуск через Docker
+
+Нужны Docker Engine/Desktop и Docker Compose v2. Сборка компилирует Vite
+приложение, а непривилегированный nginx раздаёт только статический `dist/`.
+
+```bash
+docker compose build
+docker compose up -d
+docker compose ps
+curl -fsS http://localhost:8080/healthz
+```
+
+Откройте <http://localhost:8080>. Compose публикует порт только на loopback
+(`127.0.0.1`). Остановка: `docker compose down`. Подробности и проверки состава:
+[docs/deployment.md](docs/deployment.md).
+
 ## Запуск
 
 ```bash
